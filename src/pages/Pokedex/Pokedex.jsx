@@ -85,8 +85,7 @@ const Pokedex = () => {
   return (
     <div className='pokedex'>
 
-
-
+      <div className="container">
       <div className="pokemon-details">
         <h1 className='pokemon-name'><img width="25" height="25" src={location} />{pokemon.name.slice(0, 1).toUpperCase() + pokemon.name.slice(1)}</h1>
 
@@ -130,6 +129,10 @@ const Pokedex = () => {
 
       </div>
 
+
+      </div>
+
+      
 
 
     </div>

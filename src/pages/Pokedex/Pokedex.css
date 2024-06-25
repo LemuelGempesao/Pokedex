@@ -12,9 +12,22 @@
     background-position: center;
     background-attachment: fixed;
    padding-top: 5%;
-   border-radius: 10px;
+   
 
 
+}
+
+.container{
+
+    min-height:500px;
+   max-height:500px;
+    min-width: 500px;
+    max-width: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
 }
 
 .status{
@@ -35,6 +48,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 .pokemon-name{
@@ -71,6 +85,7 @@
     flex-wrap: wrap;
     gap: 2px;
     padding: 20px;
+    border-radius: 0 0 10px 10px ;
     
     
 }
