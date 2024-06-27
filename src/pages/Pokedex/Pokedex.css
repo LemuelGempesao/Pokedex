@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background:url("../../constants/pokedetail.jpg");
@@ -40,7 +40,8 @@
 .pokemon-details{
     
     background-color: orange;
-    min-width: 400px;
+    min-width: 300px;
+    width: 400px;
     max-width: 400px;
     min-height: 20rem;
     padding: 10px;
@@ -75,7 +76,8 @@
     border-bottom: 2px solid rgb(85, 84, 84);
 }
 .search-container{
-    min-width: 400px;
+    min-width: 300px;
+    width: 400px;
     max-width: 400px;
     min-height: 8rem;
     background:linear-gradient(to top, red, rgb(95, 46, 46));
@@ -155,3 +157,10 @@
 
 
 
+@media screen and (max-width:400px) {
+
+    .search-container, .pokemon-details{
+        width: 300px;
+    }
+    
+}
