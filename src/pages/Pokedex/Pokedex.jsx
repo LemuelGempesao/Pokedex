@@ -60,7 +60,7 @@ const Pokedex = () => {
         throw new Error(`Couldn't Find Pokemon ${pokemonName}`);
       }
 
-      setFetching(`Status: Found ${pokemonName.toUpperCase()}`);
+      setFetching(`${pokemonName.toUpperCase()}`);
       const data = await res.json();
       setPokemon(data);
       setPokemonName("");
@@ -68,7 +68,7 @@ const Pokedex = () => {
     }
 
     catch (error) {
-      setFetching("Status: " + error.message);
+      setFetching(error.message);
       setPokemonName("");
       setPokemon(defaultPokemon)
 
@@ -125,7 +125,7 @@ const Pokedex = () => {
           placeholder='Search Pokemon' />
 
         <button className="find-btn" onClick={fetchPokemon}><img src={logo} /></button>
-        <h1 className='status'>{fetching}</h1>
+        <h1 className='status'><span>Status: </span> {fetching}</h1>
 
       </div>
 
