@@ -60,7 +60,7 @@ const Pokedex = () => {
         throw new Error(`Couldn't Find Pokemon ${pokemonName}`);
       }
 
-      setFetching(`${pokemonName.toUpperCase()}`);
+      setFetching(`Found ${pokemonName.slice(0,1).toUpperCase()+pokemonName.slice(1)}`);
       const data = await res.json();
       setPokemon(data);
       setPokemonName("");
